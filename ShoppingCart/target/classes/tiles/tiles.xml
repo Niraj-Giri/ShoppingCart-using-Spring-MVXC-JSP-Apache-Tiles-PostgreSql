@@ -1,0 +1,99 @@
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+    <!-- ========== BASE LAYOUT ========== -->
+    <definition name="baseLayout" template="/WEB-INF/layout/baseLayout.jsp">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="header" value=""/>
+        <put-attribute name="body" value=""/>
+        <put-attribute name="footer" value=""/>
+        <put-attribute name="css" value=""/>
+        <put-attribute name="js" value=""/>
+    </definition>
+
+    <!-- ========== AUTH PAGES ========== -->
+
+    <definition name="user.login" extends="baseLayout">
+        <put-attribute name="title" value="Login"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/user/login.jsp"/>
+        <put-attribute name="css" value="/WEB-INF/jsp/css/auth.jsp"/>
+    </definition>
+
+    <definition name="user.register" extends="baseLayout">
+        <put-attribute name="title" value="Register"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/user/register.jsp"/>
+        <put-attribute name="css" value="/WEB-INF/jsp/css/auth.jsp"/>
+    </definition>
+
+    <!-- ========== USER PAGES ========== -->
+    <definition name="user.cart" extends="baseLayout">
+        <put-attribute name="title" value="Your Cart"/>
+        <put-attribute name="header" value="/WEB-INF/fragments/userNavBar.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/fragments/footer.jsp"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/user/cart.jsp"/>
+        <put-attribute name="css" value="/WEB-INF/jsp/css/shop.jsp"/>
+    </definition>
+    <definition name="user.home" extends="baseLayout">
+        <put-attribute name="title" value="Home"/>
+        <put-attribute name="header" value="/WEB-INF/fragments/userNavBar.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/fragments/footer.jsp"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/user/home.jsp"/>
+        <put-attribute name="css" value="/WEB-INF/jsp/css/shop.jsp"/>
+        <put-attribute name="js" value="/WEB-INF/jsp/js/home.jsp"/>
+    </definition>
+
+    <definition name="user.orders" extends="baseLayout">
+        <put-attribute name="title" value="My Orders"/>
+        <put-attribute name="header" value="/WEB-INF/fragments/userNavBar.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/fragments/footer.jsp"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/user/orders.jsp"/>
+        <put-attribute name="css" value="/WEB-INF/jsp/css/shop.jsp"/>
+    </definition>
+
+    <definition name="user.ordersDetails" extends="baseLayout">
+        <put-attribute name="title" value="Order Details"/>
+        <put-attribute name="header" value="/WEB-INF/fragments/userNavBar.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/fragments/footer.jsp"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/user/ordersDetails.jsp"/>
+        <put-attribute name="css" value="/WEB-INF/jsp/css/shop.jsp"/>
+    </definition>
+
+    <!-- ========== ADMIN PAGES ========== -->
+
+    <definition name="admin.dashboard" extends="baseLayout">
+        <put-attribute name="title" value="Admin Dashboard"/>
+        <put-attribute name="header" value="/WEB-INF/fragments/adminNavBar.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/fragments/footer.jsp"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/dashboard.jsp"/>
+        <put-attribute name="css" value="/WEB-INF/jsp/css/admin.jsp"/>
+    </definition>
+
+    <definition name="admin.productDetails" extends="baseLayout">
+        <put-attribute name="title" value="Product Details"/>
+        <put-attribute name="header" value="/WEB-INF/fragments/adminNavBar.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/fragments/footer.jsp"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/productDetails.jsp"/>
+        <put-attribute name="css" value="/WEB-INF/jsp/css/admin.jsp"/>
+        <put-attribute name="js" value="/WEB-INF/jsp/js/admin.jsp"/>
+    </definition>
+
+    <definition name="admin.addProduct" extends="baseLayout">
+        <put-attribute name="title" value="Add Product"/>
+        <put-attribute name="header" value="/WEB-INF/fragments/adminNavBar.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/fragments/footer.jsp"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/addProduct.jsp"/>
+        <put-attribute name="css" value="/WEB-INF/jsp/css/admin.jsp"/>
+    </definition>
+
+    <definition name="admin.orders" extends="baseLayout">
+        <put-attribute name="title" value="orders"/>
+        <put-attribute name="header" value="/WEB-INF/fragments/adminNavBar.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/fragments/footer.jsp"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/orders.jsp"/>
+        <put-attribute name="css" value="/WEB-INF/jsp/css/admin.jsp"/>
+    </definition>
+
+</tiles-definitions>

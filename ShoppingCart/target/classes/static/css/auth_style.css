@@ -1,0 +1,128 @@
+/* ---------- AUTH PAGES ---------- */
+
+body{
+    background: #b8b8b8;
+}
+.auth-container {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f5f7fa, #e4ecf7);
+    padding: 20px;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 440px;
+    background: #ffffff;
+    padding: 32px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* 🔹 Title */
+.auth-title {
+    text-align: center;
+    margin-bottom: 8px;
+    color: #1f2937;
+    font-size: 24px;          /* was default */
+    font-weight: 700;
+}
+
+/* 🔹 Subtitle */
+.auth-subtitle {
+    text-align: center;
+    font-size: 18px;          /* was 14px */
+    color: #6b7280;
+    margin-bottom: 28px;
+}
+
+/* Form spacing */
+.auth-form .form-group {
+    margin-bottom: 18px;
+}
+
+/* 🔹 Labels */
+.auth-form label {
+    display: block;
+    font-size: 18px;          /* was 14px */
+    margin-bottom: 8px;
+    color: #374151;
+    font-weight: 500;
+}
+
+/* 🔹 Inputs */
+.auth-form input,
+.auth-form textarea {
+    width: 100%;
+    padding: 14px 16px;       /* slightly bigger */
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 18px;          /* was 14px */
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.auth-form input:focus,
+.auth-form textarea:focus {
+    outline: none;
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
+.auth-form textarea {
+    resize: none;
+    height: 90px;
+}
+
+/* 🔹 Button */
+.btn-primary {
+    width: 100%;
+    margin-top: 14px;
+    padding: 14px;
+    background: #4f46e5;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 19px;          /* was 15px */
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background: #4338ca;
+}
+
+/* 🔹 Messages */
+.msg {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 18px;          /* was 14px */
+}
+
+.msg.error {
+    color: #dc2626;
+}
+
+.msg.success {
+    color: #16a34a;
+}
+
+/* 🔹 Footer */
+.auth-footer {
+    margin-top: 24px;
+    text-align: center;
+    font-size: 18px;          /* was 14px */
+    color: #374151;
+}
+
+.auth-footer a {
+    color: #4f46e5;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}

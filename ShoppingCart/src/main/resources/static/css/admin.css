@@ -1,0 +1,400 @@
+/* =========================================================
+   ADMIN NAVBAR
+========================================================= */
+body {
+    background: #ececec;
+    margin: 0;
+    font-size: 16px; /* Base font increased */
+}
+
+.admin-navbar {
+    background: #ffffff;
+    color: #0b0909;
+    padding: 14px 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-nav-left {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.admin-logo {
+    font-weight: 700;
+    font-size: 25px; /* +3px */
+    color: #a5b4fc;
+}
+
+.admin-navbar a {
+    color: #0b0909;
+    text-decoration: none;
+    font-size: 21px; /* +3px */
+    font-weight: 500;
+}
+
+.admin-navbar a:hover,
+.admin-navbar a.active {
+    color: #817777;
+    border-bottom: 2px solid #a5b4fc;
+}
+
+/* Logout */
+.logout-btn {
+    background: #ef4444;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 15px; /* +3px */
+    color: #ffffff;
+}
+
+.logout-btn:hover {
+    background: #dc2626;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.admin-header {
+    max-width: 1200px;
+    margin: 28px auto 18px;
+    padding: 0 20px;
+}
+
+.admin-header h2 {
+    margin: 0;
+    font-size: 30px; /* +4px */
+    color: #111827;
+}
+
+.admin-header p {
+    font-size: 17px; /* +3px */
+    color: #6b7280;
+}
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.admin-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px 50px;
+}
+
+.admin-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 22px;
+    align-items: stretch;
+}
+
+/* =========================================================
+   CARD (❌ FONT NOT CHANGED)
+========================================================= */
+
+.admin-card {
+    background: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 8px 20px rgba(94, 87, 87, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.admin-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 32px rgba(0,0,0,0.12);
+}
+
+/* =========================================================
+   CONSISTENT PRODUCT IMAGE
+========================================================= */
+
+.admin-card-image {
+    width: 100%;
+    height: 160px;
+    background: #f3f4f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.admin-card-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* =========================================================
+   CARD BODY (❌ FONT NOT CHANGED)
+========================================================= */
+
+.admin-card-body {
+    padding: 16px 16px 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.admin-card-body h3 {
+    margin: 0 0 6px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.price {
+    font-weight: 700;
+    color: #16a34a;
+    margin: 4px 0 8px;
+}
+
+.desc {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #6b7280;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* =========================================================
+   PRODUCT DETAILS PAGE
+========================================================= */
+
+.admin-product-container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 30px;
+}
+
+.product-image-box {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image-box img {
+    max-width: 100%;
+    max-height: 320px;
+    object-fit: contain;
+}
+
+.product-form-box {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 28px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.subtitle {
+    font-size: 17px; /* +3px */
+    color: #6b7280;
+    margin-bottom: 20px;
+}
+
+/* =========================================================
+   ADD PRODUCT PAGE
+========================================================= */
+
+.admin-add-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.admin-form-card {
+    width: 100%;
+    max-width: 520px;
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 32px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* =========================================================
+   FORMS
+========================================================= */
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 17px; /* +3px */
+    margin-bottom: 8px;
+    color: #374151;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    font-size: 17px; /* +3px */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79,70,229,0.15);
+}
+
+/* =========================================================
+   ACTION BUTTONS
+========================================================= */
+
+.actions {
+    margin-top: 22px;
+    display: flex;
+    gap: 16px;
+}
+
+.btn {
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 17px; /* +3px */
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+}
+
+.btn.update {
+    background: #52dc0d;
+    color: #ffffff;
+}
+
+.btn.update:hover {
+    background: #53b124;
+}
+
+.btn.delete {
+    background: #ef4444;
+    color: #ffffff;
+}
+
+.btn.delete:hover {
+    background: #dc2626;
+}
+
+/* =========================================================
+   ADMIN ORDERS (❌ FONT NOT CHANGED)
+========================================================= */
+
+.orders-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.admin-orders-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.admin-order-card {
+    background: #ffffff;
+    padding: 18px 22px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-order-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+}
+
+.order-left h4 {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.order-price {
+    margin-top: 6px;
+    font-weight: 600;
+    color: #4f46e5;
+}
+
+.order-status {
+    padding: 6px 16px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.site-footer {
+    margin-top: 80px;
+    padding: 30px 16px;
+    text-align: center;
+    background: linear-gradient(180deg, #eef2ff, #e0e7ff);
+    border-top: 1px solid rgba(79, 70, 229, 0.15);
+}
+
+.site-footer p {
+    margin: 0;
+    font-size: 17px; /* +3px */
+    font-weight: 600;
+    color: #4b5563;
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .admin-navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .admin-product-container {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-order-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .order-right {
+        align-self: flex-end;
+    }
+}
